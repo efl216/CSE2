@@ -35,8 +35,8 @@ public class BigMac {
         // (int)(6.73 * 10) % (10) -> 67 % 10 -> 7
         // where the % (modulus) operator returns the remainder after the division
         // 583 % 100 -> 83, 27 % 5 -> 2
-        dimes =(int)(cost$*10)%10;
-        pennies=(int)(cost$*100)%10;
+        dimes =(int)(cost$*10)%10; //calculates the tenth decimal place
+        pennies=(int)(cost$*100)%10; //calculates the hundrth decimal place
         System.out.println("The total cost of " +nBigMacs + " BigMacs, at $"+bigMac$ +" per bigMac, with a sales tax of "+ (int)(taxRate*100) +"%, is $"+dollars+'.'+dimes+pennies+"");
         
         

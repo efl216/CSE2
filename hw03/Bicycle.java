@@ -28,16 +28,16 @@ public class Bicycle {
        //computations
        double totalDistance=((wheelDiameter*pi* (double) counts)/12)/5280; //computes total distance traveled
        totalDistance=totalDistance*100; //
-       int totalDistanceInt= (int) totalDistance;
-       double totalDistanceDoub= (double) totalDistanceInt/100;
+       int totalDistanceInt= (int) totalDistance; //converts distance to an integer
+       double totalDistanceDoub= (double) totalDistanceInt/100; //turns the distance to a double with 2 decimal places
        double totalTime= (double) seconds/60; //computes total time in minutes
-       totalTime=totalTime*100;
-       int totalTimeInt= (int) totalTime;
-       double totalTimeDoub= (double) totalTimeInt/100;
-       double totalTimeHrs=totalTime/60;
+       totalTime=totalTime*100; // removes the decimal
+       int totalTimeInt= (int) totalTime; //converts to an integer
+       double totalTimeDoub= (double) totalTimeInt/100; //displays time with 2 digits after the decimal
+       double totalTimeHrs=totalTime/60; //converts minutes to hours for mph calculation
        
-       double speed= totalDistance/totalTimeHrs;
-       speed=speed*100;
+       double speed= totalDistance/totalTimeHrs; //calculates mph
+       speed=speed*100; 
        int speedInt= (int) speed;
        double speedDoub= (double) speedInt/100;
        
