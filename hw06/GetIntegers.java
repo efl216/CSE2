@@ -33,14 +33,14 @@ public class GetIntegers{
                     }
                     else { //if the input is not an integer
                         i=i-1; 
-                        System.out.println("Enter a valid number ");
-                        myScanner.next();
+                        System.out.println("Enter a valid number "); //prompts user to enter a valid number
+                        myScanner.next(); 
                                 }
 
 
                         }
 
-System.out.println("Sum="+sum);
+System.out.println("Sum="+sum); //prints the sum
 
 }  
 

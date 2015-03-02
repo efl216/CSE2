@@ -15,9 +15,9 @@ public class RunFactorial{
         long factorial=1; //declare and initialize the factorial value
         System.out.println("Enter an int between 9 and 16 "); //prompt user
         int t=0;
-        while(!myScanner.hasNextLong()) {
-            System.out.println("please enter a valid number");
-            myScanner.next();
+        while(!myScanner.hasNextLong()) { //makes sure input is a long
+            System.out.println("please enter a valid number"); //if not, prompt user an error message
+            myScanner.next(); //clears command line
         }
         
         long num=myScanner.nextLong(); //store user input 
