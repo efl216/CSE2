@@ -65,11 +65,66 @@ public class Exam2 { //define a class
 // }
 
 //for (int x=6;x>=1;x--){
-    for (int i=4; i>=1; i--){
-        for (int k=1; k<=i-1; k++){
-            System.out.print(k);
+    
+    // for(int val=6;val>=1;val--){
+    //     int i =val -2;
+    //     if (i<=0){
+    //         System.out.println(val);
+    //         continue;
+    //     }
+    //     for(int k=i;k>=1;k--){
+    //         for (int j=1;j<=k-1;j++){
+    //             System.out.print(val);
+    //         }
+    //         System.out.println(val);
+    //     }
+    // }
+
+// for (int i=0; i<30; i+=4){
+//     for (int j=20; j>0; j-=4){
+//         System.out.println(i+j);
+        
+//     }
+// }
+// Scanner myScan= new Scanner(System.in);
+// System.out.println("enter a day from 1-7, 0 to quit");
+// while (myScan.hasNextInt()){
+//     int day=myScan.nextInt();
+//     System.out.println(convertToDay(day));
+//     System.out.println("enter a day from 1-7, 0 to quit");
+// }
+
+// }
+// public static String convertToDay(int num){
+//     String theDay="";
+//     switch (num){
+//         case 0:
+//             System.exit(0);
+//         case 1: 
+//             theDay="Monday";
+//             break;
+//         case 2:
+//             theDay="Tuesday";
+//             break;
+//         default:
+//             theDay="Not a Day";
+//             break;
+            
+//     }
+//     return theDay;
+            
+// }
+// }
+int i=2;
+for( ; i<=4;i++){
+    for (int j=1; j<=i;j++){
+        for (int k=1; k<=j-1; k++){
+            System.out.print("b");
         }
-        System.out.println(i);
+        System.out.println("b");
+            
+        }
     }
 }
 }
+
