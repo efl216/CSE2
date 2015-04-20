@@ -21,9 +21,6 @@ public class ArrayInputs{
           System.out.println(arrayNums[j]);   
         }
 
-        // for (int j=1; j<=arraySize; j++){
-        //     System.out.println(arrayNums[j]);
-        //  }
     }
        
        public static int checkValue(){
