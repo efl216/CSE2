@@ -1,4 +1,7 @@
-
+//Emily Levenson
+//hw 12
+//the program generates two random matrices in the dimensions given by the user, and then multiplies the matrices together. 
+//april 20 2015
 import java.util.Random;
 import java.util.Scanner;
 
@@ -123,7 +126,7 @@ public static int[][] randomMatrix(int row, int column){ //this method creates a
         for (int i=0; i<a.length; i++){ //iterates each row of array a
             for (int j=0; j<b[1].length; j++){ //iterates each column of array b
                 for(int k=0; k<a[1].length; k++){ //iterates each column of array a
-               array[i][j]+=a[i][k]*b[k][j]; //multiplies the two arrays together
+                  array[i][j]+=a[i][k]*b[k][j]; //multiplies the two arrays together
             }         
         }
         } 
