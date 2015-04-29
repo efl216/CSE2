@@ -17,11 +17,16 @@ for (int i=0; i<grades.length; i++){ //begin loop to assign each array index to 
     
    while(!myScan.hasNextInt()){ //prompt user to enter only integers
        System.out.println("please enter integers only");
-        myScan.hasNext();
+        myScan.next();
    }
        int num=myScan.nextInt();
        while (num<0 || num>100){ //prompt user to enter grades only in the proper range
            System.out.println("The students grade must be in the range from 0-100");
+             while(!myScan.hasNextInt()){ //prompt user to enter only integers
+                System.out.println("please enter integers only");
+                myScan.next();
+             }
+ 
            num=myScan.nextInt();
        }
        grades[i]=num; //assign each array index to a value

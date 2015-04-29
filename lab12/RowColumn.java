@@ -64,31 +64,15 @@ public static void main(String[] args){
      System.out.println("Matrix 3 is:  ");
      int [][] Array3=increasingMatrix(width2, height2, format2);
      printArray(Array3, format2);
-    //  int [][]Array3=increasingMatrix(width2, height2, format2);
-    //  System.out.println("The transposed array is: ");
-    //  Array3=translate(Array3);
-    //  printArray(Array3, format);
-     
-     
-    // int num=Array2.length;
-    // int num2=Array2[0].length;
-    // System.out.println(num);
-    // System.out.println(num2);
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-     
-     
-     
-     
+    int [][] sumArray=addMatrix(Array1,format, Array2, format);
+    System.out.println("The sum of the matrix 1 and Matrix 2 is: ");
+    printArray(sumArray,format);
+   
+    int [][] sumArray2=addMatrix(Array2,format, Array3, format);
+    System.out.println("The sum of the matrix 2 and Matrix 3 is: ");
+    printArray(sumArray2,format);
+  
 }
      
      
@@ -149,12 +133,29 @@ public static void main(String[] args){
         return newArray;
     }
     
-//   public static int[][] addMatrix( int[][] a, boolean formata, int[][] b, boolean formatb){
+   public static int[][] addMatrix( int[][] a, boolean format1, int[][] b, boolean format2){
+       int sum [][]=new int [a.length][a[0].length];
+    //   System.out.println("a.length= " +a.length);
+    //   System.out.println("a[0].length= "+ a[0].length);
+       
+     //  System.out.println("b[2][0]="+b[2][0]);
+       if(a.length==b.length && a[0].length==b[0].length){
+          // int sum [][]=new int [a.length][a[0].length];
+           for (int i=0; i<a.length; i++){
+               for (int j=0; j<a[0].length; j++){
+                   sum[i][j]=a[i][j]+b[i][j];
+               }
+               
+           }
+       }
+       else{
+           System.out.println("Matrices cannot be added");
+           System.exit(0);
+       }
+       return sum;
       
-    
-    
-    
-    
+ 
+   } 
     
     
     
